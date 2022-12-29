@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/LazyDeveloperr/LazyPrincess.git /LazyPrincess
+  git clone https://github.com/Vijay14958/Manual-Filter-Bot.git /Manual-Filter-Bot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /LazyPrincess
+  git clone $UPSTREAM_REPO /Manual-Filter-Bot
 fi
-cd /LazyPrincess
+cd /Manual-Filter-Bot
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
